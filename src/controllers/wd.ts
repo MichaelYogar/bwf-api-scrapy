@@ -8,8 +8,8 @@ const NAMESPACE = 'WD';
 const getWD = async (req: Request, res: Response, next: NextFunction) => {
     logging.info(NAMESPACE, 'WD');
 
-    db.execute(queryWD).spread(function (users: any) {
-        res.json(users);
+    db.execute(queryWD).spread(function (players: string) {
+        res.json(players);
     });
 };
 

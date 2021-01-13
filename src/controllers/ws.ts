@@ -8,8 +8,8 @@ const NAMESPACE = 'WS';
 const getWS = async (req: Request, res: Response, next: NextFunction) => {
     logging.info(NAMESPACE, 'WS');
 
-    db.execute(queryWS).spread(function (users: any) {
-        res.json(users);
+    db.execute(queryWS).spread(function (players: string) {
+        res.json(players);
     });
 };
 

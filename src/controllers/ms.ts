@@ -8,8 +8,8 @@ const NAMESPACE = 'MS';
 const getMS = async (req: Request, res: Response, next: NextFunction) => {
     logging.info(NAMESPACE, 'MS');
 
-    db.execute(queryMS).spread(function (users: any) {
-        res.json(users);
+    db.execute(queryMS).spread(function (players: string) {
+        res.json(players);
     });
 };
 

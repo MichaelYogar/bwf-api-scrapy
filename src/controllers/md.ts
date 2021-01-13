@@ -8,8 +8,8 @@ const NAMESPACE = 'MD';
 const getMD = async (req: Request, res: Response, next: NextFunction) => {
     logging.info(NAMESPACE, 'MD');
 
-    db.execute(queryMD).spread(function (users: any) {
-        res.json(users);
+    db.execute(queryMD).spread(function (players: string) {
+        res.json(players);
     });
 };
 
