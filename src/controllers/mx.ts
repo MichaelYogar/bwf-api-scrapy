@@ -8,8 +8,8 @@ const NAMESPACE = 'MX';
 const getMX = async (req: Request, res: Response, next: NextFunction) => {
     logging.info(NAMESPACE, 'MX');
 
-    db.execute(queryMX).spread(function (users: any) {
-        res.json(users);
+    db.execute(queryMX).spread(function (players: string) {
+        res.json(players);
     });
 };
 

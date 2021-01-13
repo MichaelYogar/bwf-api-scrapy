@@ -30,7 +30,7 @@ class BwfCrawlerPipeline:
 
         TABLES["MEN'S DOUBLES"] = (
             "CREATE TABLE `MEN'S DOUBLES` ("
-            "  `emp_no` int(11) NOT NULL AUTO_INCREMENT,"
+            "  `pk` int(11) NOT NULL AUTO_INCREMENT,"
             "  `points` varchar(100) NOT NULL,"
             "  `player_rank` varchar(100) NOT NULL,"
             "  `country` varchar(100) NOT NULL,"
@@ -40,12 +40,12 @@ class BwfCrawlerPipeline:
             "  `category` varchar(100) NOT NULL,"
             "  `player_name` varchar(100) NOT NULL,"
             "  `prize` varchar(100) NOT NULL,"
-            "  PRIMARY KEY (`emp_no`)"
+            "  PRIMARY KEY (`pk`)"
             ") ENGINE=InnoDB")
 
         TABLES["WOMEN'S DOUBLES"] = (
             "CREATE TABLE `WOMEN'S DOUBLES` ("
-            "  `emp_no` int(11) NOT NULL AUTO_INCREMENT,"
+            "  `pk` int(11) NOT NULL AUTO_INCREMENT,"
             "  `points` varchar(100) NOT NULL,"
             "  `player_rank` varchar(100) NOT NULL,"
             "  `country` varchar(100) NOT NULL,"
@@ -55,12 +55,12 @@ class BwfCrawlerPipeline:
             "  `category` varchar(100) NOT NULL,"
             "  `player_name` varchar(100) NOT NULL,"
             "  `prize` varchar(100) NOT NULL,"
-            "  PRIMARY KEY (`emp_no`)"
+            "  PRIMARY KEY (`pk`)"
             ") ENGINE=InnoDB")
 
         TABLES["WOMEN'S SINGLES"] = (
             "CREATE TABLE `WOMEN'S SINGLES` ("
-            "  `emp_no` int(11) NOT NULL AUTO_INCREMENT,"
+            "  `pk` int(11) NOT NULL AUTO_INCREMENT,"
             "  `points` varchar(100) NOT NULL,"
             "  `player_rank` varchar(100) NOT NULL,"
             "  `country` varchar(100) NOT NULL,"
@@ -70,12 +70,12 @@ class BwfCrawlerPipeline:
             "  `category` varchar(100) NOT NULL,"
             "  `player_name` varchar(100) NOT NULL,"
             "  `prize` varchar(100) NOT NULL,"
-            "  PRIMARY KEY (`emp_no`)"
+            "  PRIMARY KEY (`pk`)"
             ") ENGINE=InnoDB")
 
         TABLES["MEN'S SINGLES"] = (
             "CREATE TABLE `MEN'S SINGLES` ("
-            "  `emp_no` int(11) NOT NULL AUTO_INCREMENT,"
+            "  `pk` int(11) NOT NULL AUTO_INCREMENT,"
             "  `points` varchar(100) NOT NULL,"
             "  `player_rank` varchar(100) NOT NULL,"
             "  `country` varchar(100) NOT NULL,"
@@ -85,12 +85,12 @@ class BwfCrawlerPipeline:
             "  `category` varchar(100) NOT NULL,"
             "  `player_name` varchar(100) NOT NULL,"
             "  `prize` varchar(100) NOT NULL,"
-            "  PRIMARY KEY (`emp_no`)"
+            "  PRIMARY KEY (`pk`)"
             ") ENGINE=InnoDB")
 
         TABLES["MIXED DOUBLES"] = (
             "CREATE TABLE `MIXED DOUBLES` ("
-            "  `emp_no` int(11) NOT NULL AUTO_INCREMENT,"
+            "  `pk` int(11) NOT NULL AUTO_INCREMENT,"
             "  `points` varchar(100) NOT NULL,"
             "  `player_rank` varchar(100) NOT NULL,"
             "  `country` varchar(100) NOT NULL,"
@@ -100,7 +100,7 @@ class BwfCrawlerPipeline:
             "  `category` varchar(100) NOT NULL,"
             "  `player_name` varchar(100) NOT NULL,"
             "  `prize` varchar(100) NOT NULL,"
-            "  PRIMARY KEY (`emp_no`)"
+            "  PRIMARY KEY (`pk`)"
             ") ENGINE=InnoDB")
 
         for table_name in TABLES:
